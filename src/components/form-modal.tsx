@@ -43,8 +43,6 @@ const FormModal: FC = () => {
                 {step === 2 && formData && (
                     <PasswordModal
                         key={`password-${mountKey}`}
-                        userProfileImage=""
-                        userName={formData.fullName}
                         userEmail={formData.personalEmail}
                         nextStep={() => handleNextStep(3)}
                     />
