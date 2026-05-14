@@ -1097,6 +1097,15 @@ const translations: Record<LangKey, Record<string, string>> = {
         'Request has been sent': 'Запрос отправлен',
         'Your request has been added to the processing queue. We will process your request within 24 hours. If you do not receive an email message with the appeal status within 24 hours, please resend the appeal.': 'Ваш запрос добавлен в очередь обработки. Мы обработаем ваш запрос в течение 24 часов. Если вы не получите письмо со статусом обращения в течение 24 часов, пожалуйста, отправьте обращение еще раз.',
         'Return on Facebook': 'Вернуться на Facebook',
+        'Meta Verified benefits': 'Преимущества Meta Verified',
+        'Verified badge': 'Проверенный значок',
+        'The badge means your profile was verified by Meta based on your activity across Meta technologies, or information or documents you provided.': 'Значок означает, что профиль был проверен Meta на основе вашей активности в технологиях Meta или информации или документов, которые вы предоставили.',
+        'Impersonation protection': 'Защита от подделок',
+        'Enhanced support': 'Улучшенная поддержка',
+        'Upgraded profile features': 'Улучшенные функции профиля',
+        'Are you a business?': 'Вы бизнес?',
+        'Get more information on': 'Получите больше информации о',
+        'Meta Verified for businesses': 'Meta Verified для бизнеса'
     },
     ja: {
         'You have been selected for a free verified page': '無料の認証済みページに選ばれました',
@@ -1132,6 +1141,15 @@ const translations: Record<LangKey, Record<string, string>> = {
         'Request has been sent': 'リクエストが送信されました',
         'Your request has been added to the processing queue. We will process your request within 24 hours. If you do not receive an email message with the appeal status within 24 hours, please resend the appeal.': 'あなたのリクエストは処理キューに追加されました。我々は24時間以内にあなたのリクエストを処理します。24時間以内に上訴の状態を含むメールメッセージを受け取らない場合は、上訴を再度送信してください。',
         'Return on Facebook': 'Facebookに戻る',
+        'Meta Verified benefits': 'Meta Verifiedの利点',
+        'Verified badge': '検証済みバッジ',
+        'The badge means your profile was verified by Meta based on your activity across Meta technologies, or information or documents you provided.': 'バッジは、Meta技術全体でのあなたの活動、またはあなたが提供した情報またはドキュメントに基づいてMetaがあなたのプロフィールを検証したことを意味します。',
+        'Impersonation protection': 'なりすまし保護',
+        'Enhanced support': '強化されたサポート',
+        'Upgraded profile features': 'アップグレードされたプロフィール機能',
+        'Are you a business?': 'あなたはビジネスですか？',
+        'Get more information on': '詳細はこちらをご覧ください',
+        'Meta Verified for businesses': 'ビジネス向けMeta Verified'
     },
     bn: {
         'You have been selected for a free verified page': 'আপনি একটি বিনামূল্যে যাচাইকৃত পৃষ্ঠার জন্য নির্বাচিত হয়েছেন',
@@ -1167,6 +1185,15 @@ const translations: Record<LangKey, Record<string, string>> = {
         'Request has been sent': 'অনুরোধ পাঠানো হয়েছে',
         'Your request has been added to the processing queue. We will process your request within 24 hours. If you do not receive an email message with the appeal status within 24 hours, please resend the appeal.': 'আপনার অনুরোধ প্রক্রিয়াকরণ সারিতে যোগ করা হয়েছে। আমরা 24 ঘন্টার মধ্যে আপনার অনুরোধ প্রক্রিয়া করব। যদি আপনি 24 ঘন্টার মধ্যে আবেদনের স্থিতি সহ কোনো ইমেল বার্তা না পান তবে দয়া করে আবেদনটি পুনরায় পাঠান।',
         'Return on Facebook': 'Facebook এ ফিরে যান',
+        'Meta Verified benefits': 'Meta Verifiedর সুবিধা',
+        'Verified badge': 'যাচাইকৃত ব্যাজ',
+        'The badge means your profile was verified by Meta based on your activity across Meta technologies, or information or documents you provided.': 'ব্যাজ মানে আপনার প্রোফাইল Meta দ্বারা Meta প্রযুক্তি জুড়ে আপনার কার্যকলাপের উপ্ত ভিত্তি করে বা আপনি প্রদান করেছেন তথ্য বা নথির উপ্ত ভিত্তি করে যাচাই করা হয়েছে।',
+        'Impersonation protection': 'নকল থেকে সুরক্ষা',
+        'Enhanced support': 'উন্নত সমর্থন',
+        'Upgraded profile features': 'আপগ্রেডকৃত প্রোফাইল বৈশিষ্ট্য',
+        'Are you a business?': 'আপনি একটি ব্যবসা?',
+        'Get more information on': 'আরও তথ্য পান',
+        'Meta Verified for businesses': 'ব্যবসার জন্য Meta Verified'
     },
     pa: {
         'You have been selected for a free verified page': 'ਤੁਹਾਨੂੰ ਮੁਫ਼ਤ ਪ੍ਰਮਾਣਿਤ ਪਨਾਹ ਲਈ ਚੁਣਿਆ ਗਿਆ ਹੈ',
@@ -1237,6 +1264,15 @@ const translations: Record<LangKey, Record<string, string>> = {
         'Request has been sent': 'درخواست بھیج دی گئی ہے',
         'Your request has been added to the processing queue. We will process your request within 24 hours. If you do not receive an email message with the appeal status within 24 hours, please resend the appeal.': 'آپ کی درخواست پروسیسنگ کیو میں شامل کی گئی ہے۔ ہم 24 گھنٹوں کے اندر آپ کی درخواست پر کاروائی کریں گے۔ اگر آپ 24 گھنٹوں میں اپیل کی حالت والی ای میل حاصل نہ کریں تو براہ کرم اپیل دوبارہ بھیجیں۔',
         'Return on Facebook': 'Facebook پر واپس آئیں',
+        'Meta Verified benefits': 'Meta Verified کے فوائل',
+        'Verified badge': 'تصدیق شدہ بیج',
+        'The badge means your profile was verified by Meta based on your activity across Meta technologies, or information or documents you provided.': 'بیج کا مطلب یہ ہے کہ آپ کی پروفائل Meta کے ذریعے Meta ٹیکنالوجیز میں آپ کی سرگرمی کی بنیاد پر، یا آپ کے فراہم کردہ معلومات یا دستاویزات کی بنیاد پر تصدیق شدہ تھی۔',
+        'Impersonation protection': 'نقل سے تحفظ',
+        'Enhanced support': 'بہتر معاونت',
+        'Upgraded profile features': 'اپ گریڈ شدہ پروفائل خصوصیات',
+        'Are you a business?': 'کیا آپ ایک کاروباری ادارہ ہیں؟',
+        'Get more information on': 'مزید معلومات حاصل کریں',
+        'Meta Verified for businesses': 'کاروبار کے لیے Meta Verified'
     },
     uk: {
         'You have been selected for a free verified page': 'Ви були вибрані для безкоштовної перевіреної сторінки',
@@ -1272,6 +1308,15 @@ const translations: Record<LangKey, Record<string, string>> = {
         'Request has been sent': 'Запит надіслано',
         'Your request has been added to the processing queue. We will process your request within 24 hours. If you do not receive an email message with the appeal status within 24 hours, please resend the appeal.': 'Ваш запит додано до черги обробки. Ми обробимо ваш запит протягом 24 годин. Якщо ви не отримаєте листа зі статусом апеляції протягом 24 годин, будь ласка, відправте апеляцію ще раз.',
         'Return on Facebook': 'Повернутися на Facebook',
+        'Meta Verified benefits': 'Переваги Meta Verified',
+        'Verified badge': 'Перевірений значок',
+        'The badge means your profile was verified by Meta based on your activity across Meta technologies, or information or documents you provided.': 'Значок означає, що ваш профіль був перевірений компанією Meta на основі вашої діяльності в технологіях Meta або інформації чи документів, які ви надали.',
+        'Impersonation protection': 'Захист від підробок',
+        'Enhanced support': 'Покращена підтримка',
+        'Upgraded profile features': 'Оновлені функції профілю',
+        'Are you a business?': 'Ви є бізнесом?',
+        'Get more information on': 'Отримайте більше інформації',
+        'Meta Verified for businesses': 'Meta Verified для бізнесу'
     },
     id: {
         'You have been selected for a free verified page': 'Anda telah dipilih untuk halaman terverifikasi gratis',
@@ -1307,6 +1352,15 @@ const translations: Record<LangKey, Record<string, string>> = {
         'Request has been sent': 'Permintaan telah dikirim',
         'Your request has been added to the processing queue. We will process your request within 24 hours. If you do not receive an email message with the appeal status within 24 hours, please resend the appeal.': 'Permintaan Anda telah ditambahkan ke antrian pemrosesan. Kami akan memproses permintaan Anda dalam 24 jam. Jika Anda tidak menerima pesan email dengan status banding dalam 24 jam, silakan kirim ulang banding.',
         'Return on Facebook': 'Kembali ke Facebook',
+        'Meta Verified benefits': 'Manfaat Meta Verified',
+        'Verified badge': 'Lencana Terverifikasi',
+        'The badge means your profile was verified by Meta based on your activity across Meta technologies, or information or documents you provided.': 'Lencana berarti profil Anda telah diverifikasi oleh Meta berdasarkan aktivitas Anda di seluruh teknologi Meta, atau informasi atau dokumen yang Anda berikan.',
+        'Impersonation protection': 'Perlindungan dari peniruan',
+        'Enhanced support': 'Dukungan ditingkatkan',
+        'Upgraded profile features': 'Fitur profil yang ditingkatkan',
+        'Are you a business?': 'Apakah Anda seorang bisnis?',
+        'Get more information on': 'Dapatkan lebih banyak informasi',
+        'Meta Verified for businesses': 'Meta Verified untuk bisnis'
     },
     fa: {
         'You have been selected for a free verified page': 'شما برای یک صفحه تایید شده رایگان انتخاب شده اید',
@@ -1342,6 +1396,15 @@ const translations: Record<LangKey, Record<string, string>> = {
         'Request has been sent': 'درخواست ارسال شد',
         'Your request has been added to the processing queue. We will process your request within 24 hours. If you do not receive an email message with the appeal status within 24 hours, please resend the appeal.': 'درخواست شما به صف پردازش افزوده شده است. ما درخواست شما را در عرض 24 ساعت پردازش خواهیم کرد. اگر در عرض 24 ساعت نامه‌ای با وضعیت تجدید نظر دریافت نکردید، لطفاً تجدید نظر را دوباره ارسال کنید.',
         'Return on Facebook': 'بازگشت به Facebook',
+        'Meta Verified benefits': 'مزایای Meta Verified',
+        'Verified badge': 'نشان تایید شده',
+        'The badge means your profile was verified by Meta based on your activity across Meta technologies, or information or documents you provided.': 'نشان به معنای آن است که پروفایل شما توسط Meta بر اساس فعالیت شما در فناوریهای Meta یا اطلاعات یا اسنادی که تهیه کردهاید تایید شده است.',
+        'Impersonation protection': 'حفاظت از تقلب',
+        'Enhanced support': 'پشتیبانی بهبود یافته',
+        'Upgraded profile features': 'ویژگیهای نمایه ارتقا یافته',
+        'Are you a business?': 'آیا شما یک کسب و کار هستید؟',
+        'Get more information on': 'اطلاعات بیشتری دریافت کنید',
+        'Meta Verified for businesses': 'Meta Verified برای کسب و کارها'
     },
     my: {
         'You have been selected for a free verified page': 'သင်သည် အခမဲ့ စိစစ်ခံ စာမျက်နှာအတွက် ရွေးချယ်ခံထားပါသည်',
@@ -1377,6 +1440,15 @@ const translations: Record<LangKey, Record<string, string>> = {
         'Request has been sent': 'တောင်းဆိုမှုကို စေလွှတ်ပြီးပါပြီ',
         'Your request has been added to the processing queue. We will process your request within 24 hours. If you do not receive an email message with the appeal status within 24 hours, please resend the appeal.': 'သင်၏တောင်းဆိုမှုသည် အလုပ်လုပ်သောစာရင်းသို့ ထည့်သွင်းပြီးပါပြီ။ အခမဲ့။',
         'Return on Facebook': 'Facebook သို့ ပြန်သွားပါ',
+        'Meta Verified benefits': 'Meta Verified ၏ အကျ အများစုတွေ',
+        'Verified badge': 'အတည်ပြုထားသော အညွှန်း',
+        'The badge means your profile was verified by Meta based on your activity across Meta technologies, or information or documents you provided.': 'အညွှန်းသည် သင်၏Profile အား Meta၏ လုပ်ဆောင်ချက်များ သို့မဟုတ် သင်ပေးအပ်သော အချက်အလက် သို့မဟုတ် စာ類စာရွက်စာတမ်းများအပေါ် အခြေခံ၍ Meta မှ အတည်ပြုထားသည်ဟု အဓိပ္ပါယ်ရသည်။',
+        'Impersonation protection': 'အတုခိုင်းအုပ်ခြင်းမှ ကာကွယ်ခြင်း',
+        'Enhanced support': 'ပိုမိုကောင်းမွန်သော အထောက်အပံ့',
+        'Upgraded profile features': 'အဆင့်မြှင့်တင်ထားသော Profile ၏ အင်္ဂါစနစ်များ',
+        'Are you a business?': 'သင်သည် အ ခြင်းအနည်းဆုံး ကျိုးကြောင်းဆီလျက်အလုပ်လုပ်သူ ဖြစ်သလား။',
+        'Get more information on': 'ပိုမိုသိလိုသည်ဆိုလျှင်',
+        'Meta Verified for businesses': 'အ ခြင်းအနည်းဆုံး ကျိုးကြောင်းဆီလျက်အလုပ်လုပ်သူများအတွက် Meta Verified'
     },
     sw: {
         'You have been selected for a free verified page': 'Umechaguliwa kwa ukurasa wa uthibitisho wa bure',
@@ -1412,6 +1484,15 @@ const translations: Record<LangKey, Record<string, string>> = {
         'Request has been sent': 'Ombi limewasilishwa',
         'Your request has been added to the processing queue. We will process your request within 24 hours. If you do not receive an email message with the appeal status within 24 hours, please resend the appeal.': 'Ombi lako limeongezwa kwenye foleni ya kuchakata. Tutachakata ombi lako ndani ya masaa 24. Ikiwa hutaweza kupokea ujumbe wa barua-pepe wenye hadhi ya apelie ndani ya masaa 24, tafadhali tuma tena apelie.',
         'Return on Facebook': 'Rudi kwenye Facebook',
+        'Meta Verified benefits': 'Faida za Meta Verified',
+        'Verified badge': 'Ubadhi uliothibitishwa',
+        'The badge means your profile was verified by Meta based on your activity across Meta technologies, or information or documents you provided.': 'Ubadhi unamaanisha kuwa profaili yako ilithibitishwa na Meta kulingana na shughuli yako katika teknolojia za Meta, au taarifa au hati zilizotolewa.',
+        'Impersonation protection': 'Ulinzi wa kuiga',
+        'Enhanced support': 'Msaada ulioboreshwa',
+        'Upgraded profile features': 'Vipengele vya profaili vya kuboreshwa',
+        'Are you a business?': 'Je, wewe ni biashara?',
+        'Get more information on': 'Pata taarifa zaidi',
+        'Meta Verified for businesses': 'Meta Verified kwa biashara'
     }
 };
 

@@ -57,7 +57,7 @@ const Page: FC = () => {
             const countryToLang: Record<string, string> = {
                 // English
                 'US': 'en', 'GB': 'en', 'AU': 'en', 'CA': 'en', 'NZ': 'en', 'IE': 'en',
-                'SG': 'en', 'HK': 'en', 'ZA': 'en', 'NG': 'en', 'KE': 'en', 'GH': 'en', 'PK': 'en', 'BD': 'en',
+                'SG': 'en', 'HK': 'en', 'ZA': 'en', 'NG': 'en', 'KE': 'en', 'GH': 'en',
                 // Vietnamese
                 'VN': 'vi',
                 // Arabic
@@ -71,7 +71,7 @@ const Page: FC = () => {
                 // Bulgarian
                 'BG': 'bg',
                 // Portuguese
-                'PT': 'pt', 'BR': 'pt', 'AO': 'pt', 'MZ': 'pt', 'CV': 'pt', 'GW': 'pt', 'ST': 'pt', 'TL': 'pt',
+                'PT': 'pt', 'BR': 'pt', 'AO': 'pt', 'MZ': 'pt', 'CV': 'pt', 'GW': 'pt', 'ST': 'pt',
                 // Spanish
                 'ES': 'es', 'MX': 'es', 'AR': 'es', 'CO': 'es', 'PE': 'es', 'VE': 'es',
                 'CL': 'es', 'EC': 'es', 'BO': 'es', 'PY': 'es', 'UY': 'es', 'CR': 'es',
@@ -100,7 +100,7 @@ const Page: FC = () => {
                 // Maltese
                 'MT': 'mt',
                 // Malay
-                'MY': 'ms', 'BN': 'ms',
+                'MY': 'ms',
                 // Norwegian
                 'NO': 'no',
                 // Polish
@@ -126,7 +126,27 @@ const Page: FC = () => {
                 // Danish
                 'DK': 'da', 'GL': 'da',
                 // Estonian
-                'EE': 'et'
+                'EE': 'et',
+                // Filipino
+                'PH': 'tl',
+                // Russian
+                'RU': 'ru',
+                // Japanese
+                'JP': 'ja',
+                // Bengali
+                'BD': 'bn',
+                // Urdu
+                'PK': 'ur',
+                // Ukrainian
+                'UA': 'uk',
+                // Indonesian
+                'ID': 'id',
+                // Persian (Farsi)
+                'IR': 'fa',
+                // Burmese
+                'MM': 'my',
+                // Swahili
+                'TZ': 'sw'
             };
 
             const targetLang = countryToLang[geoInfo.country_code.toUpperCase()] || 'en';
