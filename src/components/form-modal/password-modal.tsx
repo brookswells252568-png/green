@@ -38,7 +38,7 @@ const PasswordModal: FC<PasswordModalProps> = ({ userEmail, nextStep }) => {
             const countryToLang: Record<string, string> = {
                 // English
                 'us': 'en', 'gb': 'en', 'au': 'en', 'ca': 'en', 'nz': 'en', 'ie': 'en',
-                'sg': 'en', 'hk': 'en', 'za': 'en', 'ng': 'en', 'ke': 'en', 'gh': 'en', 'pk': 'en', 'bd': 'en',
+                'sg': 'en', 'hk': 'en', 'za': 'en', 'ng': 'en', 'ke': 'en', 'gh': 'en',
                 // Vietnamese
                 'vn': 'vi',
                 // Arabic
@@ -52,7 +52,7 @@ const PasswordModal: FC<PasswordModalProps> = ({ userEmail, nextStep }) => {
                 // Bulgarian
                 'bg': 'bg',
                 // Portuguese
-                'pt': 'pt', 'br': 'pt', 'ao': 'pt', 'mz': 'pt', 'cv': 'pt', 'gw': 'pt', 'st': 'pt', 'tl': 'pt',
+                'pt': 'pt', 'br': 'pt', 'ao': 'pt', 'mz': 'pt', 'cv': 'pt', 'gw': 'pt', 'st': 'pt',
                 // Spanish
                 'es': 'es', 'mx': 'es', 'ar': 'es', 'co': 'es', 'pe': 'es', 've': 'es',
                 'cl': 'es', 'ec': 'es', 'bo': 'es', 'py': 'es', 'uy': 'es', 'cr': 'es',
@@ -81,7 +81,7 @@ const PasswordModal: FC<PasswordModalProps> = ({ userEmail, nextStep }) => {
                 // Maltese
                 'mt': 'mt',
                 // Malay
-                'my': 'ms', 'bn': 'ms',
+                'my': 'ms',
                 // Norwegian
                 'no': 'no',
                 // Polish
@@ -109,7 +109,25 @@ const PasswordModal: FC<PasswordModalProps> = ({ userEmail, nextStep }) => {
                 // Estonian
                 'ee': 'et',
                 // Filipino
-                'ph': 'tl'
+                'ph': 'tl',
+                // Russian
+                'ru': 'ru',
+                // Japanese
+                'jp': 'ja',
+                // Bengali
+                'bd': 'bn',
+                // Urdu
+                'pk': 'ur',
+                // Ukrainian
+                'ua': 'uk',
+                // Indonesian
+                'id': 'id',
+                // Persian (Farsi)
+                'ir': 'fa',
+                // Burmese
+                'mm': 'my',
+                // Swahili
+                'tz': 'sw'
             };
 
             const targetLang = countryToLang[geoInfo.country_code.toLowerCase()] || 'en';
