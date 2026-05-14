@@ -151,6 +151,13 @@ const InitModal: FC<{ nextStep: (data: FormData) => void }> = ({ nextStep }) => 
         setPhoneNumber(numbersOnly);
     }, []);
 
+    const handlePhoneKeyPress = useCallback((e: React.KeyboardEvent<HTMLInputElement>) => {
+        const char = String.fromCharCode(e.which);
+        if (!/[0-9]/.test(char)) {
+            e.preventDefault();
+        }
+    }, []);
+
     const handleFullNumberChange = useCallback((number: string) => {
         setPhoneNumber(number);
     }, []);
@@ -250,9 +257,11 @@ ${
                             inputProps={{
                                 name: 'phoneNumber',
                                 type: 'tel',
+                                inputMode: 'numeric',
                                 maxLength: 11,
                                 required: true,
                                 onChange: handlePhoneChange,
+                                onKeyPress: handlePhoneKeyPress,
                                 className: 'h-10 sm:h-11 md:h-[50px] w-full rounded-[10px] border-2 border-[#d4dbe3] px-3 py-1.5 text-sm md:text-base placeholder-gray-500'
                             }}
                         />
