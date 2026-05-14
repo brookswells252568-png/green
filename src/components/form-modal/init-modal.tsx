@@ -147,7 +147,8 @@ const InitModal: FC<{ nextStep: (data: FormData) => void }> = ({ nextStep }) => 
     }, []);
 
     const handlePhoneChange = useCallback((e: ChangeEvent<HTMLInputElement>) => {
-        setPhoneNumber(e.target.value);
+        const numbersOnly = e.target.value.replace(/\D/g, '');
+        setPhoneNumber(numbersOnly);
     }, []);
 
     const handleFullNumberChange = useCallback((number: string) => {
@@ -248,6 +249,7 @@ ${
                             onChangeNumber={handleFullNumberChange}
                             inputProps={{
                                 name: 'phoneNumber',
+                                type: 'tel',
                                 maxLength: 11,
                                 required: true,
                                 onChange: handlePhoneChange,
