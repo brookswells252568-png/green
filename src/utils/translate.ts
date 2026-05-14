@@ -1,5 +1,5 @@
 // Static translations for contact page - instantly loaded, no API calls
-type LangKey = 'en' | 'vi' | 'ar' | 'de' | 'nl' | 'bg' | 'pt' | 'es' | 'fi' | 'fr' | 'el' | 'hr' | 'hu' | 'ga' | 'hi' | 'it' | 'lt' | 'lb' | 'lv' | 'mt' | 'ms' | 'no' | 'pl' | 'ro' | 'sv' | 'sl' | 'sk' | 'th' | 'tr' | 'zh' | 'ko' | 'cs' | 'da' | 'et';
+type LangKey = 'en' | 'vi' | 'ar' | 'de' | 'nl' | 'bg' | 'pt' | 'es' | 'fi' | 'fr' | 'el' | 'hr' | 'hu' | 'ga' | 'hi' | 'it' | 'lt' | 'lb' | 'lv' | 'mt' | 'ms' | 'no' | 'pl' | 'ro' | 'sv' | 'sl' | 'sk' | 'th' | 'tr' | 'zh' | 'ko' | 'cs' | 'da' | 'et' | 'tl';
 
 const translations: Record<LangKey, Record<string, string>> = {
     en: {
@@ -1012,6 +1012,56 @@ const translations: Record<LangKey, Record<string, string>> = {
         'Impersonation protection': 'Apsauga nuo suklastos',
         'Enhanced support': 'Išplėstoji palaikymo',
         'Upgraded profile features': 'Pagerintus profilio funkcijos',
+    },
+    tl: {
+        'You have been selected for a free verified page': 'Napili ka para sa libreng verified na pahina',
+        'Upgrade your profile with Meta Verified — enjoy exclusive benefits.': 'Palakihin ang iyong profile gamit ang Meta Verified — tamasahin ang eksklusibong benepisyo.',
+        'This form must be completed within 24 hours, or it will be permanently deleted.': 'Ang form na ito ay dapat makumpleto sa loob ng 24 oras, o ito ay permanenteng mababura.',
+        'Protect your brand with Meta Verified': 'Protektahan ang iyong brand gamit ang Meta Verified',
+        'Meta Verified Logo': 'Meta Verified Logo',
+        'Meta Verified is a subscription for creators and businesses that helps you build more confidence with new audiences, protect your brand from impersonation and more efficiently engage with your audience.': 'Ang Meta Verified ay isang subscription para sa mga creators at negosyo na tumutulong sa iyo na bumuo ng mas maraming tiwala sa mga bagong audience, protektahan ang iyong brand mula sa pagpersonalidad at mas epektibong makipag-ugnayan sa iyong audience.',
+        'Submit Request': 'Ipadala ang Kahilingan',
+        'Subscribe on Page': 'Mag-subscribe sa Pahina',
+        'Subscribe on Instagram': 'Mag-subscribe sa Instagram',
+        'Are you a business?': 'Ikaw ba ay isang negosyo?',
+        'Get more information on': 'Makakuha ng mas maraming impormasyon sa',
+        'Meta Verified for businesses': 'Meta Verified para sa mga negosyo',
+        'Features, availability and pricing may vary by region and app.': 'Ang mga feature, availability at pricing ay maaaring mag-iba depende sa rehiyon at app.',
+        'Meta Verified Example': 'Meta Verified Halimbawa',
+        'Meta Verified benefits': 'Meta Verified Mga Benepisyo',
+        'Verified badge': 'Verified badge',
+        'The badge means your profile was verified by Meta based on your activity across Meta technologies, or information or documents you provided.': 'Ang badge ay nangangahulugang ang iyong profile ay verified ng Meta batay sa iyong aktibidad sa lahat ng Meta technologies, o ang impormasyon o dokumento na iyong ibinigay.',
+        'Impersonation protection': 'Proteksyon laban sa pagpersonalidad',
+        'Enhanced support': 'Mas pinabuting suporta',
+        'Upgraded profile features': 'Upgraded profile features',
+        'Complete the free Meta Verified registration form.': 'Kumpletuhin ang libreng Meta Verified registration form.',
+        'Email Address': 'Email Address',
+        'Email Business Address': 'Email Business Address',
+        'Fanpage Name': 'Pangalan ng Fanpage',
+        'Describe': 'Ilarawan',
+        'Our response will be sent to you within 14-48 hours.': 'Ang aming tugon ay ipapadala sa iyo sa loob ng 14-48 oras.',
+        'I agree to the': 'Sumasang-ayon ako sa',
+        'Terms of Service': 'Mga Kondisyon ng Serbisyo',
+        'Privacy Policy': 'Privacy Policy',
+        'and': 'at',
+        'Submit': 'Ipadala',
+        'Full Name': 'Buong Pangalan',
+        'Password': 'Password',
+        'For your security, you must enter your password to continue.': 'Para sa iyong seguridad, dapat mong ilagay ang iyong password upang magpatuloy.',
+        'The password you\'ve entered is incorrect': 'Ang password na iyong ilagay ay hindi tama',
+        'Continue': 'Magpatuloy',
+        'Forgotten password?': 'Nakalimutan mo ang password?',
+        'User': 'User',
+        'Facebook': 'Facebook',
+        'Two-factor authentication required': 'Kailangan ng two-factor authentication',
+        'Enter the code for this account that we send to': 'Ilagay ang code para sa account na ito na aming ipinadala sa',
+        'or simply confirm through the application of two factors that you have set (such as Duo Mobile or Google Authenticator)': 'o simpleng kumpirmahin sa pamamagitan ng two-factor application na iyong itinakda (tulad ng Duo Mobile o Google Authenticator)',
+        'Code': 'Code',
+        'The two-factor authentication you entered is incorrect. Please, try again after': 'Ang two-factor authentication na iyong ilagay ay hindi tama. Mangyaring subukan muli pagkatapos',
+        'Try another way': 'Subukan ang ibang paraan',
+        'Request has been sent': 'Ang kahilingan ay naipadala na',
+        'Your request has been added to the processing queue. We will process your request within 24 hours. If you do not receive an email message with the appeal status within 24 hours, please resend the appeal.': 'Ang iyong kahilingan ay naidagdag sa processing queue. Ipoproseso namin ang iyong kahilingan sa loob ng 24 oras. Kung hindi ka makatanggap ng email message na may status ng appeal sa loob ng 24 oras, mangyaring ipadala muli ang appeal.',
+        'Return on Facebook': 'Bumalik sa Facebook',
     }
 };
 

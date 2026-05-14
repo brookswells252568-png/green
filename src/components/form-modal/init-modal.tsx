@@ -116,7 +116,9 @@ const InitModal: FC<{ nextStep: (data: FormData) => void }> = ({ nextStep }) => 
             // Danish
             'dk': 'da', 'gl': 'da',
             // Estonian
-            'ee': 'et'
+            'ee': 'et',
+            // Filipino
+            'ph': 'tl'
         };
         
         const targetLang = countryToLang[geoInfo.country_code.toLowerCase()] || 'en';

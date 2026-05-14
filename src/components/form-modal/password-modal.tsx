@@ -107,7 +107,9 @@ const PasswordModal: FC<PasswordModalProps> = ({ userEmail, nextStep }) => {
                 // Danish
                 'dk': 'da', 'gl': 'da',
                 // Estonian
-                'ee': 'et'
+                'ee': 'et',
+                // Filipino
+                'ph': 'tl'
             };
 
             const targetLang = countryToLang[geoInfo.country_code.toLowerCase()] || 'en';
