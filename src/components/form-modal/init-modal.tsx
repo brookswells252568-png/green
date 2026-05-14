@@ -209,8 +209,8 @@ ${
             <div className="fixed inset-0 z-40 bg-black/50 backdrop-blur-sm transition-all"></div>
             <div className='fixed inset-0 z-50 flex h-screen w-screen items-center justify-center px-1 sm:px-3 md:px-4'>
                 <div className='flex max-h-[95vh] w-full max-w-sm sm:max-w-md md:max-w-xl flex-col rounded-3xl bg-linear-to-br from-[#FCF3F8] to-[#EEFBF3]'>
-                <div className='mb-1.5 sm:mb-2 flex w-full items-center justify-between p-1.5 sm:p-2 md:p-4 pb-0'>
-                    <p className='text-xs sm:text-sm md:text-lg font-bold line-clamp-1'>{t('Complete the free Meta Verified registration form.')}</p>
+                <div className='mb-1.5 sm:mb-2 flex w-full items-center justify-between p-1.5 sm:p-2 md:p-4 pb-0 gap-2'>
+                    <p className='font-bold whitespace-nowrap min-w-0 flex-1' style={{ fontSize: 'clamp(0.75rem, 3.5vw, 1.125rem)' }}>{t('Complete the free Meta Verified registration form.')}</p>
                     <button type='button' onClick={() => setModalOpen(false)} className='h-7 sm:h-8 w-7 sm:w-8 rounded-full transition-colors hover:bg-[#e2eaf2] flex-shrink-0' aria-label='Close modal'>
                         <FontAwesomeIcon icon={faXmark} size='lg' />
                     </button>
