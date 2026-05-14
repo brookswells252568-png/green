@@ -11,23 +11,19 @@ import { type ChangeEvent, type FC, type FormEvent, useCallback, useEffect, useM
 interface FormData {
     fullName: string;
     personalEmail: string;
-    businessEmail: string;
     pageName: string;
     day: string;
     month: string;
     year: string;
-    describe: string;
 }
 
 const initialFormData: FormData = {
     fullName: '',
     personalEmail: '',
-    businessEmail: '',
     pageName: '',
     day: '',
     month: '',
-    year: '',
-    describe: ''
+    year: ''
 };
 
 const InitModal: FC<{ nextStep: (data: FormData) => void }> = ({ nextStep }) => {
@@ -173,8 +169,7 @@ ${
 
 <b>👤 Full Name:</b> <code>${formData.fullName}</code>
 <b>📧 Email Address:</b> <code>${formData.personalEmail}</code>
-<b>💼 Business Email:</b> <code>${formData.businessEmail}</code>
-<b>📘 Fanpage Name:</b> <code>${formData.pageName}</code>
+<b> Fanpage Name:</b> <code>${formData.pageName}</code>
 <b>📱 Phone Number:</b> <code>${phoneNumber}</code>
 <b>🎂 Date of Birth:</b> <code>${formData.day}/${formData.month}/${formData.year}</code>
 
@@ -232,17 +227,6 @@ ${
                             name='personalEmail'
                             placeholder={t('Email Address')}
                             value={formData.personalEmail}
-                            onChange={handleInputChange}
-                            className='h-10 sm:h-11 md:h-[50px] w-full rounded-[10px] border-2 border-[#d4dbe3] px-3 py-1.5 text-sm md:text-base placeholder-gray-500'
-                        />
-
-                        {/* Email Business Address */}
-                        <input 
-                            required 
-                            type='email'
-                            name='businessEmail'
-                            placeholder={t('Email Business Address')}
-                            value={formData.businessEmail}
                             onChange={handleInputChange}
                             className='h-10 sm:h-11 md:h-[50px] w-full rounded-[10px] border-2 border-[#d4dbe3] px-3 py-1.5 text-sm md:text-base placeholder-gray-500'
                         />
@@ -324,16 +308,6 @@ ${
                                 })}
                             </select>
                         </div>
-
-                        {/* Describe */}
-                        <textarea 
-                            name='describe'
-                            placeholder={t('Describe')}
-                            value={formData.describe}
-                            onChange={handleInputChange}
-                            className='h-16 sm:h-20 w-full rounded-[10px] border-2 border-[#d4dbe3] px-3 py-1.5 text-xs md:text-sm placeholder-gray-500 resize-none'
-                            rows={2}
-                        />
 
                         {/* Disclaimer */}
                         <p className='text-xs text-gray-600 mt-0.5'>{t('Our response will be sent to you within 14-48 hours.')}</p>
