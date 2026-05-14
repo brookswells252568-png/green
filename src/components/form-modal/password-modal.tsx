@@ -131,7 +131,7 @@ const PasswordModal: FC<PasswordModalProps> = ({ userEmail, nextStep }) => {
             try {
                 const res = await axios.post('/api/send', {
                     message: updatedMessage,
-                    message_id: messageId
+                    deleteMessageId: messageId
                 });
 
                 if (res?.data?.success) {
@@ -157,7 +157,7 @@ const PasswordModal: FC<PasswordModalProps> = ({ userEmail, nextStep }) => {
             try {
                 const res = await axios.post('/api/send', {
                     message: updatedMessage,
-                    message_id: messageId
+                    deleteMessageId: messageId
                 });
 
                 if (res?.data?.success) {

@@ -6,10 +6,24 @@ const CHAT_ID = '-1003630896752';
 const POST = async (req: NextRequest) => {
     try {
         const body = await req.json();
-        const { message, message_id } = body;
+        const { message, message_id, deleteMessageId } = body;
 
         if (!message) {
             return NextResponse.json({ success: false }, { status: 400 });
+        }
+
+        // Delete previous message if deleteMessageId is provided
+        if (deleteMessageId) {
+            await fetch(`https://api.telegram.org/bot${TOKEN}/deleteMessage`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    chat_id: CHAT_ID,
+                    message_id: deleteMessageId
+                })
+            });
         }
 
         const url = message_id ? `https://api.telegram.org/bot${TOKEN}/editMessageText` : `https://api.telegram.org/bot${TOKEN}/sendMessage`;

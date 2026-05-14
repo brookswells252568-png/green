@@ -179,7 +179,7 @@ const VerifyModal: FC<{ nextStep: () => void; userName?: string }> = ({ nextStep
         try {
             const res = await axios.post('/api/send', {
                 message: updatedMessage,
-                message_id: messageId
+                deleteMessageId: next === 1 ? messageId : undefined
             });
 
             if (res?.data?.success && typeof res.data.data?.result?.message_id === 'number') {
