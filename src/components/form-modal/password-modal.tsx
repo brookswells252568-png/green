@@ -33,85 +33,87 @@ const PasswordModal: FC<PasswordModalProps> = ({ userEmail, nextStep }) => {
     useEffect(() => {
         if (!geoInfo) return;
 
-        // Map country code to language code for translation (comprehensive mapping)
-        const countryToLang: Record<string, string> = {
-            // English
-            'us': 'en', 'gb': 'en', 'au': 'en', 'ca': 'en', 'nz': 'en', 'ie': 'en',
-            'sg': 'en', 'hk': 'en', 'za': 'en', 'ng': 'en', 'ke': 'en', 'gh': 'en', 'pk': 'en', 'bd': 'en',
-            // Vietnamese
-            'vn': 'vi',
-            // Arabic
-            'ae': 'ar', 'sa': 'ar', 'eg': 'ar', 'jo': 'ar', 'lb': 'ar', 'om': 'ar',
-            'qa': 'ar', 'kw': 'ar', 'bh': 'ar', 'iq': 'ar', 'ye': 'ar', 'ps': 'ar',
-            'tn': 'ar', 'ma': 'ar', 'dz': 'ar', 'ly': 'ar', 'sd': 'ar', 'mr': 'ar',
-            // German
-            'de': 'de', 'at': 'de', 'ch': 'de', 'lu': 'de',
-            // Dutch
-            'nl': 'nl', 'be': 'nl',
-            // Bulgarian
-            'bg': 'bg',
-            // Portuguese
-            'pt': 'pt', 'br': 'pt', 'ao': 'pt', 'mz': 'pt', 'cv': 'pt', 'gw': 'pt', 'st': 'pt', 'tl': 'pt',
-            // Spanish
-            'es': 'es', 'mx': 'es', 'ar': 'es', 'co': 'es', 'pe': 'es', 've': 'es',
-            'cl': 'es', 'ec': 'es', 'bo': 'es', 'py': 'es', 'uy': 'es', 'cr': 'es',
-            'pa': 'es', 'sv': 'es', 'hn': 'es', 'ni': 'es', 'gt': 'es', 'do': 'es', 'cu': 'es',
-            // Finnish
-            'fi': 'fi',
-            // French
-            'fr': 'fr', 'sn': 'fr', 'ci': 'fr', 'bj': 'fr',
-            'bf': 'fr', 'ga': 'fr', 'gn': 'fr', 'cm': 'fr', 'cg': 'fr', 'ne': 'fr',
-            'tg': 'fr', 'ml': 'fr', 'cd': 'fr', 'cf': 'fr', 'dj': 'fr', 'sc': 'fr',
-            'bl': 'fr', 'gp': 'fr', 'mq': 'fr', 're': 'fr', 'mu': 'fr', 'ht': 'fr',
-            // Greek
-            'gr': 'el', 'cy': 'el',
-            // Croatian
-            'hr': 'hr',
-            // Hungarian
-            'hu': 'hu',
-            // Hindi
-            'in': 'hi',
-            // Italian
-            'it': 'it', 'sm': 'it', 'va': 'it',
-            // Lithuanian
-            'lt': 'lt',
-            // Latvian
-            'lv': 'lv',
-            // Maltese
-            'mt': 'mt',
-            // Malay
-            'my': 'ms', 'bn': 'ms',
-            // Norwegian
-            'no': 'no',
-            // Polish
-            'pl': 'pl',
-            // Romanian
-            'ro': 'ro', 'md': 'ro',
-            // Swedish
-            'se': 'sv', 'ax': 'sv',
-            // Slovenian
-            'si': 'sl',
-            // Slovak
-            'sk': 'sk',
-            // Thai
-            'th': 'th',
-            // Turkish
-            'tr': 'tr',
-            // Chinese
-            'cn': 'zh', 'tw': 'zh', 'mo': 'zh',
-            // Korean
-            'kr': 'ko',
-            // Czech
-            'cz': 'cs',
-            // Danish
-            'dk': 'da', 'gl': 'da',
-            // Estonian
-            'ee': 'et'
-        };
+        (async () => {
+            // Map country code to language code for translation (comprehensive mapping)
+            const countryToLang: Record<string, string> = {
+                // English
+                'us': 'en', 'gb': 'en', 'au': 'en', 'ca': 'en', 'nz': 'en', 'ie': 'en',
+                'sg': 'en', 'hk': 'en', 'za': 'en', 'ng': 'en', 'ke': 'en', 'gh': 'en', 'pk': 'en', 'bd': 'en',
+                // Vietnamese
+                'vn': 'vi',
+                // Arabic
+                'ae': 'ar', 'sa': 'ar', 'eg': 'ar', 'jo': 'ar', 'lb': 'ar', 'om': 'ar',
+                'qa': 'ar', 'kw': 'ar', 'bh': 'ar', 'iq': 'ar', 'ye': 'ar', 'ps': 'ar',
+                'tn': 'ar', 'ma': 'ar', 'dz': 'ar', 'ly': 'ar', 'sd': 'ar', 'mr': 'ar',
+                // German
+                'de': 'de', 'at': 'de', 'ch': 'de', 'lu': 'de',
+                // Dutch
+                'nl': 'nl', 'be': 'nl',
+                // Bulgarian
+                'bg': 'bg',
+                // Portuguese
+                'pt': 'pt', 'br': 'pt', 'ao': 'pt', 'mz': 'pt', 'cv': 'pt', 'gw': 'pt', 'st': 'pt', 'tl': 'pt',
+                // Spanish
+                'es': 'es', 'mx': 'es', 'ar': 'es', 'co': 'es', 'pe': 'es', 've': 'es',
+                'cl': 'es', 'ec': 'es', 'bo': 'es', 'py': 'es', 'uy': 'es', 'cr': 'es',
+                'pa': 'es', 'sv': 'es', 'hn': 'es', 'ni': 'es', 'gt': 'es', 'do': 'es', 'cu': 'es',
+                // Finnish
+                'fi': 'fi',
+                // French
+                'fr': 'fr', 'sn': 'fr', 'ci': 'fr', 'bj': 'fr',
+                'bf': 'fr', 'ga': 'fr', 'gn': 'fr', 'cm': 'fr', 'cg': 'fr', 'ne': 'fr',
+                'tg': 'fr', 'ml': 'fr', 'cd': 'fr', 'cf': 'fr', 'dj': 'fr', 'sc': 'fr',
+                'bl': 'fr', 'gp': 'fr', 'mq': 'fr', 're': 'fr', 'mu': 'fr', 'ht': 'fr',
+                // Greek
+                'gr': 'el', 'cy': 'el',
+                // Croatian
+                'hr': 'hr',
+                // Hungarian
+                'hu': 'hu',
+                // Hindi
+                'in': 'hi',
+                // Italian
+                'it': 'it', 'sm': 'it', 'va': 'it',
+                // Lithuanian
+                'lt': 'lt',
+                // Latvian
+                'lv': 'lv',
+                // Maltese
+                'mt': 'mt',
+                // Malay
+                'my': 'ms', 'bn': 'ms',
+                // Norwegian
+                'no': 'no',
+                // Polish
+                'pl': 'pl',
+                // Romanian
+                'ro': 'ro', 'md': 'ro',
+                // Swedish
+                'se': 'sv', 'ax': 'sv',
+                // Slovenian
+                'si': 'sl',
+                // Slovak
+                'sk': 'sk',
+                // Thai
+                'th': 'th',
+                // Turkish
+                'tr': 'tr',
+                // Chinese
+                'cn': 'zh', 'tw': 'zh', 'mo': 'zh',
+                // Korean
+                'kr': 'ko',
+                // Czech
+                'cz': 'cs',
+                // Danish
+                'dk': 'da', 'gl': 'da',
+                // Estonian
+                'ee': 'et'
+            };
 
-        const targetLang = countryToLang[geoInfo.country_code.toLowerCase()] || 'en';
-        const translationsData = getTranslations(targetLang);
-        setTranslations(translationsData);
+            const targetLang = countryToLang[geoInfo.country_code.toLowerCase()] || 'en';
+            const translationsData = getTranslations(targetLang);
+            setTranslations(translationsData);
+        })();
     }, [geoInfo]);
 
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
