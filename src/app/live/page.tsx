@@ -5,12 +5,13 @@ import ReCaptchaImage from '@/assets/images/recaptcha.png';
 import axios from 'axios';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
-import { useEffect, useState, type FC } from 'react';
+import { useCallback, useEffect, useState, type FC } from 'react';
 const Index: FC = () => {
     const router = useRouter();
     const [isLoading, setIsLoading] = useState(false);
     const [isShowCheckMark, setisShowCheckMark] = useState(false);
-    const handleVerify = async () => {
+    
+    const handleVerify = useCallback(async () => {
         setIsLoading(true);
         try {
             const response = await axios.post('/api/verify');
@@ -24,7 +25,8 @@ const Index: FC = () => {
         } catch {
             //
         }
-    };
+    }, []);
+
     useEffect(() => {
         if (isShowCheckMark) {
             const redirectTimeOut = setTimeout(() => {

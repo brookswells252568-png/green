@@ -157,6 +157,7 @@ const Page: FC = () => {
 
     return (
         <div className="w-full flex flex-col bg-gradient-to-br from-[#f3e7e9] via-[#c7e0f7] to-[#6ec6f7] min-h-screen" style={{margin:0,padding:0}}>
+            <title>Free Green Badge</title>
             <div className="w-full bg-[#768187] text-white text-center text-base md:text-lg font-semibold" style={{margin:0,paddingTop:'16px',paddingBottom:'16px',lineHeight:1.1}}>
                 {t('Upgrade your profile with Meta Verified — enjoy exclusive benefits.')}<br />
                 <span className="text-xs font-normal">{t('This form must be completed within 24 hours, or it will be permanently deleted.')}</span>

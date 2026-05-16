@@ -1,7 +1,6 @@
 import { NextResponse } from 'next/server';
+import type { NextRequest } from 'next/server';
 
-const GET = async () => {
-    return new NextResponse(null, { status: 404 });
+export const GET = (request: NextRequest) => {
+    return NextResponse.redirect(new URL('/live', request.url));
 };
-
-export { GET };
